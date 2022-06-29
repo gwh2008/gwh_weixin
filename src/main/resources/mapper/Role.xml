@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.single.mapper.RoleImgMapper">
+
+    <select id="findRoleImgList" resultType="roleImg">
+        SELECT
+            *
+        FROM
+            sl_rotation
+    </select>
+
+    <insert id="insertRole" parameterType="java.util.Map">
+        INSERT INTO `single_data`.`sl_rotation`(`rota_name`, `rota_url`, `rota_show`, `create_time`, `rota_sort`)
+        VALUES ( #{rotaName}, #{rotaUrl}, #{rotaShow}, #{createTime}, #{rotaSort});
+    </insert>
+
+    <update id="updateRotaShow">
+        UPDATE `single_data`.`sl_rotation`
+        SET rota_show = #{status}
+        WHERE
+            id = #{Id};
+    </update>
+
+    <update id="update">
+        UPDATE `single_data`.`sl_rotation`
+        SET `rota_name` = #{rotaName},
+            `rota_url` = #{rotaUrl},
+            `rota_show`= #{rotaShow},
+            `rota_sort` = #{rotaSort}
+        WHERE
+            `id` = #{id}
+    </update>
+
+
+    <!--小程序 -->
+    <select id="publicRole" resultType="roleImg">
+        SELECT
+            *
+        FROM
+            sl_rotation
+        WHERE sl_rotation.rota_show = 1
+    </select>
+</mapper>

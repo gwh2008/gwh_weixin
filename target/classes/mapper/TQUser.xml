@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.single.mapper.TQUserMapper">
+
+    <!--查询User表 -->
+    <select id="findTQUserList" resultType="TQUser">
+        SELECT
+        LOGINID,DISPLAYNAME
+        FROM
+           temp_user_to_tq
+        WHERE
+            1 = 1
+        <if test="LOGINID != null and LOGINID != ''">
+            AND LOGINID LIKE concat('%',#{LOGINID},'%')
+        </if>
+        <if test="DISPLAYNAME != null and DISPLAYNAME != ''">
+            AND DISPLAYNAME LIKE concat('%',#{DISPLAYNAME},'%')
+        </if>
+
+    </select>
+
+</mapper>

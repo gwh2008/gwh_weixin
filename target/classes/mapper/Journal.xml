@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.single.mapper.JournalMapper">
+    <select id="JournalList" resultType="Journal" >
+        SELECT *
+        FROM sl_journal
+    </select>
+
+    <insert id="journalInsert" parameterType="java.util.Map">
+        INSERT INTO `single_data`.`sl_journal`(`title`,`content`,`create_time`,`show`,`journal_img`)
+        VALUES ( #{title}, #{content}, #{createTime}, #{show}, #{journalImg});
+    </insert>
+
+
+    <update id="update">
+        UPDATE `single_data`.`sl_journal`
+        SET `title` = #{title},
+            `content` = #{content},
+            `journal_img`= #{journalImg}
+        WHERE
+            `id` = #{id}
+    </update>
+
+    <update id="updateShow">
+        UPDATE `single_data`.`sl_journal`
+        SET `show` = #{show}
+        WHERE
+            `id` = #{id}
+    </update>
+</mapper>

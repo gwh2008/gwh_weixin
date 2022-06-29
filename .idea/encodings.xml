@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/Goods.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/Journal.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/MenuSystem.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/Role.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/TQUser.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/TypeOne.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/User.xml" charset="GBK" />
+  </component>
+</project>
