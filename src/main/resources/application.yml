@@ -5,9 +5,9 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://${MYSQL_ADDRESS}/${MYSQL_DATABASE:springboot_demo}
-    username: ${MYSQL_USERNAME}
-    password: ${MySQL_PASSWORD}
+    url: jdbc:mysql://sh-cynosdbmysql-grp-fw8ly2og.sql.tencentcdb.com:22737/springboot_demo
+    username: root
+    password: Gwh@831112
   mvc:
     view:
       suffix: .html
@@ -15,3 +15,13 @@ spring:
 
 mybatis:
   mapper-locations: classpath*:mapper/*Mapper.xml
+  type-aliases-package: com.tencent.wxcloudrun.model
+  configuration:
+    map-underscore-to-camel-case: true
+
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+  age-size-zero: true
