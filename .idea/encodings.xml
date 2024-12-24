@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/GoodsMapper.xml" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/JournalMapper.xml" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/MenuSystemMapper.xml" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/RoleMapper.xml" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/TQUser.xml" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/TypeOneMapper.xml" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/GoodsMapper.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/JournalMapper.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/MenuSystemMapper.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/RoleMapper.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/TypeOneMapper.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

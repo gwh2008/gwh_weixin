@@ -5,9 +5,9 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://sh-cynosdbmysql-grp-fw8ly2og.sql.tencentcdb.com:22737/springboot_demo
+    url: jdbc:mysql://127.0.0.1:3306/springboot_demo
     username: root
-    password: Gwh@831112
+    password: root
   mvc:
     view:
       suffix: .html
@@ -25,3 +25,29 @@ pagehelper:
   supportMethodsArguments: true
   params: count=countSql
   age-size-zero: true
+
+#微信支付配置
+wechatpay:
+  appid: wx47xxxxxxxxxxxxxxxx #微信公众号appid
+  api_key: 49e95xxxxxxxxxxxxxxxx #公众号设置的api密钥
+  mch_id: 169xxxxxxx #微信商户平台 商户id
+  mch_key: MchXXXXXX
+  noticeUrl: http://xxxxxxxxx.fun
+
+#支付宝支付配置
+alipay:
+  #你的APPID
+  appId: 9021000000000000
+  #你的应用私钥
+  privateKey: MIIEvgIBg5FUaH04BUZEtYzutkqv6T8v5C7jJlxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  #支付宝公钥
+  publicKey: MIIBIjANBgkxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  #生产环境网关地址
+  #serverUrl: https://openapi.alipay.com/gateway.do
+  #沙箱环境网关地址
+  serverUrl: https://openapi-sandbox.dl.alipaydev.com/gateway.do
+  #  serverUrl: https://open.alipay.com/develop/sandbox/app?is_switch_sandbox=true
+  #生产环境域
+  domain: gw.open.alipay.com
+  #回调url
+  noticeUrl: http://xxxxxxxxx.fun
